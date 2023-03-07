@@ -1,7 +1,9 @@
 let x: number = 10;
-
+let stg: string = 'Wesley';
 x = 31;
 
-let stg: string = 'Wesley';
+stg = 'Wesley Santos'
+
+
 console.log(stg + x);
 
