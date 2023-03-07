@@ -1,4 +1,5 @@
 "use strict";
 let x = 10;
-x = 32;
-console.log(x);
+x = 31;
+let stg = 'Wesley';
+console.log('Nome:' + stg + " " + 'idade:' + x);

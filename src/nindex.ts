@@ -1,6 +1,7 @@
 let x: number = 10;
 
-x = 12;
+x = 31;
 
-console.log(x);
+let stg: string = 'Wesley';
+console.log(stg + x);
 
