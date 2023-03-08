@@ -52,6 +52,7 @@ let a = 0;
 a = 'teste'; // não é a melhor opção para se usar o any
 a = true;
 a = [];
+
 // union types unir tipos para criar tipos mais completos
 let id = '10'; // | barra vertical se chama pipe
 id = 200;
