@@ -54,3 +54,6 @@ let a: any = 0;
 a = 'teste'; // não é a melhor opção para se usar o any
 a = true;
 a = [];
+
+
+// 
