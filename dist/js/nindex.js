@@ -38,7 +38,7 @@ myNumbers.sort((a, b) => a - b); // organiza um arrAay
 let myTuple: [number, string, string[]];
 
 myTuple = [5, 'teste', ['a', 'b']]; //tuple organiza de forma fixa a ordem dos elementos
-//myTuple = [true, false, 5]; */
+//myTuple = [true, false, 5]; 
 // object literals -> {pop: value}
 const user = {
     name: 'Santos',
@@ -52,4 +52,23 @@ let a = 0;
 a = 'teste'; // não é a melhor opção para se usar o any
 a = true;
 a = [];
-// 
+// union types unir tipos para criar tipos mais completos
+let id = '10'; // | barra vertical se chama pipe
+id = 200;
+const userId = 10;
+const productId = '10';
+const shirId = 123; */
+
+// enum  enumera uma coleção
+// tamanhos de roupas
+var size;
+(function (size) {
+    size["P"] = "Pequeno";
+    size["M"] = "M\u00E9dio";
+    size["G"] = "Grande";
+})(size || (size = {}));
+const camisa = {
+    name: 'Camisa gola V',
+    size: size.G,
+};
+console.log(camisa);

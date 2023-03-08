@@ -56,4 +56,36 @@ a = true;
 a = [];
 
 
-// 
+// union types unir tipos para criar tipos mais completos
+
+let id: string | number = '10'; // | barra vertical se chama pipe
+
+id = 200;
+
+// id = true; ele nao vai aceitar no typescript
+// id = [] ele nao aceita boolean ou array se nao for declarado na variável
+
+// type alias codigo mais limpo
+
+type myIdType = number | string;
+
+const userId: myIdType = 10;
+const productId: myIdType = '10';
+const shirId: myIdType = 123;
+
+// enum  enumera uma coleção
+
+// tamanhos de roupas
+
+enum size {
+    P = 'Pequeno',
+    M = 'Médio',
+    G = 'Grande',
+}
+
+const camisa = {
+    name: 'Camisa gola V',
+    size: size.G,
+};
+
+console.log(camisa)
