@@ -154,3 +154,6 @@ const someNumber: MathFunctionParams = {
 };
 
 console.log(multiplyNumber(someNumber));
+
+//norrowing
+// checagem de tipos
