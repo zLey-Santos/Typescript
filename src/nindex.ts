@@ -102,3 +102,33 @@ teste = null;
 
 //funções
 
+function sum(a: number, b: number) { // para obter um retorno temos que declarar qual tipo da tipagem
+    return a + b
+}
+
+console.log(sum(12, 120)); // so retora oq foi declarado se for number so aceita number se for string so ceita string etc...
+
+
+function sayHelloTo(name: string): string {
+    return `Hello ${name}`
+}
+console.log(sayHelloTo('Wesley'));
+
+function logger(msg: string): void { // void é tipo de função que nao retorna nada 
+    console.log(msg);
+}
+
+logger('Santos');
+
+function greeting(name: string, greet?: string) {
+    if (greet) {
+        console.log(`Olá ${greet} ${name}`);
+        return;
+    }
+    console.log(`Olá ${name}`);
+}
+
+greeting("zLey");
+greeting("Luana", "Miss")
+
+//interfaces

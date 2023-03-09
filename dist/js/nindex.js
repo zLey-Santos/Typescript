@@ -77,3 +77,25 @@ let teste; // ele no pode ser alterado mais posso usar null para começar uma va
 teste = "autenticado";
 teste = null;
 //funções
+function sum(a, b) {
+    return a + b;
+}
+console.log(sum(12, 120)); // so retora oq foi declarado se for number so aceita number se for string so ceita string etc...
+function sayHelloTo(name) {
+    return `Hello ${name}`;
+}
+console.log(sayHelloTo('Wesley'));
+function logger(msg) {
+    console.log(msg);
+}
+logger('Santos');
+function greeting(name, greet) {
+    if (greet) {
+        console.log(`Olá ${greet} ${name}`);
+        return;
+    }
+    console.log(`Olá ${name}`);
+}
+greeting("zLey");
+greeting("Luana", "Miss");
+//interfaces
