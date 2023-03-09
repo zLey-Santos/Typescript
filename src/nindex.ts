@@ -89,3 +89,12 @@ const camisa = {
 };
 
 console.log(camisa)
+
+// literal types ele so aceita um valor
+
+let teste: "autenticado" | null;
+
+// teste = "outroValor";
+teste = "autenticado";
+teste = null;
+
