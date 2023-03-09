@@ -157,3 +157,7 @@ console.log(multiplyNumber(someNumber));
 
 //norrowing
 // checagem de tipos
+
+function doSomething(info: number | boolean) {
+
+}
