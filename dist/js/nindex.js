@@ -72,7 +72,8 @@ const camisa = {
 };
 console.log(camisa);
 // literal types ele so aceita um valor
-let teste;
+let teste; // ele no pode ser alterado mais posso usar null para começar uma variável vazia nula 
 // teste = "outroValor";
 teste = "autenticado";
 teste = null;
+//funções

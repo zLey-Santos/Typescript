@@ -73,6 +73,7 @@ const userId: myIdType = 10;
 const productId: myIdType = '10';
 const shirId: myIdType = 123;
 
+
 // enum  enumera uma coleção
 
 // tamanhos de roupas
@@ -92,9 +93,12 @@ console.log(camisa)
 
 // literal types ele so aceita um valor
 
-let teste: "autenticado" | null;
+let teste: "autenticado" | null;// ele no pode ser alterado mais posso usar null para começar uma variável vazia nula 
 
 // teste = "outroValor";
 teste = "autenticado";
 teste = null;
+
+
+//funções
 
