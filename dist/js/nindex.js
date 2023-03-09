@@ -1,65 +1,18 @@
 "use strict";
-/*let x: number = 10;
-x = 31;
-
-console.log(x);
-
-// inferência x annotation
-
-let y = 12; //inferência mais usada porem sucinta
-// y = 12;
-
-let z: number = 11; //annotation deixa mais explicito a declaração
-
-
-//tipos basicos
-
-let firstName: string = ' Wesley';
-let age: number = 31;
-const isAdmin: boolean = true;
-
-// String != string
-
-console.log(typeof firstName);
-firstName = 'João';
-// console.log(firstName);
-console.log(firstName.toUpperCase());
-//object
-
-const myNumbers: number[] = [1, 2, 3];
-
-console.log(myNumbers);
-console.log(myNumbers.length); // mostra quantos elementos temos dentro do array e seus id
-myNumbers.push(5, 4, 12, 23, 1, 90); // adiciona mai elementos ao array
-myNumbers.sort((a, b) => a - b); // organiza um arrAay
-
-//tuplas
-
-let myTuple: [number, string, string[]];
-
-myTuple = [5, 'teste', ['a', 'b']]; //tuple organiza de forma fixa a ordem dos elementos
-//myTuple = [true, false, 5]; */
-// object literals -> {pop: value}
 const user = {
     name: 'Santos',
     age: 31,
 };
-// não pode adicionar nada alem do que foi atribuído 
 console.log(user);
-// console.log(typeof user);
-//any valor que aceita qual quer tipo de dados any
 let a = 0;
-a = 'teste'; // não é a melhor opção para se usar o any
+a = 'teste';
 a = true;
 a = [];
-// union types unir tipos para criar tipos mais completos
-let id = '10'; // | barra vertical se chama pipe
+let id = '10';
 id = 200;
 const userId = 10;
 const productId = '10';
 const shirId = 123;
-// enum  enumera uma coleção
-// tamanhos de roupas
 var size;
 (function (size) {
     size["P"] = "Pequeno";
@@ -71,16 +24,13 @@ const camisa = {
     size: size.G,
 };
 console.log(camisa);
-// literal types ele so aceita um valor
-let teste; // ele no pode ser alterado mais posso usar null para começar uma variável vazia nula 
-// teste = "outroValor";
+let teste;
 teste = "autenticado";
 teste = null;
-//funções
 function sum(a, b) {
     return a + b;
 }
-console.log(sum(12, 120)); // so retora oq foi declarado se for number so aceita number se for string so ceita string etc...
+console.log(sum(12, 120));
 function sayHelloTo(name) {
     return `Hello ${name}`;
 }
@@ -98,4 +48,14 @@ function greeting(name, greet) {
 }
 greeting("zLey");
 greeting("Luana", "Miss");
-//interfaces
+function sumNumber(nums) {
+    return nums.n1 + nums.n2;
+}
+function multiplyNumber(num) {
+    return num.n1 * num.n2;
+}
+const someNumber = {
+    n1: 2,
+    n2: 10
+};
+console.log(multiplyNumber(someNumber));

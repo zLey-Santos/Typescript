@@ -131,4 +131,26 @@ function greeting(name: string, greet?: string) {
 greeting("zLey");
 greeting("Luana", "Miss")
 
-//interfaces
+//interfaces para operações matemáticas serve para padronizar estruturas 
+
+interface MathFunctionParams {
+    n1: number,
+    n2: number,
+}
+
+function sumNumber(nums: MathFunctionParams) {
+    return nums.n1 + nums.n2;
+}
+
+// console.log(sumNumber({ n1: 1, n2: 2 }));
+
+function multiplyNumber(num: MathFunctionParams) {
+    return num.n1 * num.n2;
+}
+
+const someNumber: MathFunctionParams = {
+    n1: 2,
+    n2: 10
+};
+
+console.log(multiplyNumber(someNumber));
