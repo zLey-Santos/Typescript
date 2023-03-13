@@ -96,3 +96,26 @@ const a3 = [true, false];
 showArraysItems(a1);
 showArraysItems(a2);
 showArraysItems(a3);
+class User {
+    constructor(name, role, isApproved) {
+        this.name = name;
+        this.role = role;
+        this.isApproved = isApproved;
+    }
+    showUserName() {
+        console.log(`O nome so usuário é ${this.name}`);
+    }
+    showUserRole(canShow) {
+        if (canShow) {
+            console.log(`A regra de negocio é  ${this.role}`);
+            return;
+        }
+        else {
+            console.log('Informação restrita  ');
+        }
+    }
+}
+const zeca = new User('Zeca', 'Admin', true);
+console.log(zeca);
+zeca.showUserName();
+zeca.showUserRole(false);
