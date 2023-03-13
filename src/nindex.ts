@@ -242,3 +242,16 @@ const fusca = new car('VW ', 4);
 
 fusca.showBrand();
 
+// heranças
+
+class superCar extends car {
+    engine
+
+    constructor(brand: string, wheels: number, engine: number) {
+        super(brand, wheels)
+        this.engine = engine
+    }
+}
+
+const a4 = new superCar('Audi', 4, 2.0);
+console.log(a4);
