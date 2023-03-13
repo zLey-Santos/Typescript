@@ -255,3 +255,28 @@ class superCar extends car {
 
 const a4 = new superCar('Audi', 4, 2.0);
 console.log(a4);
+
+//decorators um recurso bem complexo
+// toda decoration é uma função
+// podemos add N classes 
+function BaseParameters() {
+    return function <T extends { new(...args: any[]): {} }>(constructor: T) {
+        return class extends constructor {
+            id = Math.random();
+            createdAt = new Date();
+        };
+    };
+}
+
+@BaseParameters()
+class person {
+    name
+
+    constructor(name: string) {
+        this.name = name
+    }
+}
+
+const sam = new person('Sam');
+
+console.log(sam);
