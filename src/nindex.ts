@@ -218,4 +218,27 @@ zeca.showUserName();
 
 zeca.showUserRole(false);
 
+// interface in class
+
+interface IVelhice {
+    brand: string
+    showBrand(): void
+}
+
+class car implements IVelhice {
+    brand
+    wheels
+
+    constructor(brand: string, wheels: number) {
+        this.brand = brand
+        this.wheels = wheels
+    }
+    showBrand(): void {
+        console.log(`A marca do carro é ${this.brand}`);
+    }
+}
+
+const fusca = new car('VW ', 4);
+
+fusca.showBrand();
 

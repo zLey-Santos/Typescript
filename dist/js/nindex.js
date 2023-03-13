@@ -119,3 +119,14 @@ const zeca = new User('Zeca', 'Admin', true);
 console.log(zeca);
 zeca.showUserName();
 zeca.showUserRole(false);
+class car {
+    constructor(brand, wheels) {
+        this.brand = brand;
+        this.wheels = wheels;
+    }
+    showBrand() {
+        console.log(`A marca do carro é ${this.brand}`);
+    }
+}
+const fusca = new car('VW ', 4);
+fusca.showBrand();
