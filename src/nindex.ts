@@ -1,4 +1,4 @@
-/*let x: number = 10;
+let x: number = 10;
 x = 31;
 
 console.log(x);
@@ -37,7 +37,7 @@ myNumbers.sort((a, b) => a - b); // organiza um arrAay
 let myTuple: [number, string, string[]];
 
 myTuple = [5, 'teste', ['a', 'b']]; //tuple organiza de forma fixa a ordem dos elementos
-//myTuple = [true, false, 5]; */
+//myTuple = [true, false, 5]; 
 
 // object literals -> {pop: value}
 
@@ -155,9 +155,32 @@ const someNumber: MathFunctionParams = {
 
 console.log(multiplyNumber(someNumber));
 
+
 //norrowing
 // checagem de tipos
 
 function doSomething(info: number | boolean) {
-
+    if (typeof info === 'number') {
+        console.log(`O número é ${info}`)
+    }
+    console.log('Não foi passado um número')
 }
+
+doSomething(5);
+doSomething(true);
+
+// generics é mais complexo
+// são usados por qual quer coisa
+function showArraysItems<T>(arr: T[]) {
+    arr.forEach((item) => {
+        console.log(`ITEM: ${item}`)
+    })
+}
+
+const a1 = [1, 2, 3];
+const a2 = ['a', 'b', 'c'];
+const a3 = [true, false];
+
+showArraysItems(a1);
+showArraysItems(a2);
+showArraysItems(a3);

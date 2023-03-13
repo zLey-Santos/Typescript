@@ -1,4 +1,22 @@
 "use strict";
+let x = 10;
+x = 31;
+console.log(x);
+let y = 12;
+let z = 11;
+let firstName = ' Wesley';
+let age = 31;
+const isAdmin = true;
+console.log(typeof firstName);
+firstName = 'João';
+console.log(firstName.toUpperCase());
+const myNumbers = [1, 2, 3];
+console.log(myNumbers);
+console.log(myNumbers.length);
+myNumbers.push(5, 4, 12, 23, 1, 90);
+myNumbers.sort((a, b) => a - b);
+let myTuple;
+myTuple = [5, 'teste', ['a', 'b']];
 const user = {
     name: 'Santos',
     age: 31,
@@ -59,3 +77,22 @@ const someNumber = {
     n2: 10
 };
 console.log(multiplyNumber(someNumber));
+function doSomething(info) {
+    if (typeof info === 'number') {
+        console.log(`O número é ${info}`);
+    }
+    console.log('Não foi passado um número');
+}
+doSomething(5);
+doSomething(true);
+function showArraysItems(arr) {
+    arr.forEach((item) => {
+        console.log(`ITEM: ${item}`);
+    });
+}
+const a1 = [1, 2, 3];
+const a2 = ['a', 'b', 'c'];
+const a3 = [true, false];
+showArraysItems(a1);
+showArraysItems(a2);
+showArraysItems(a3);
